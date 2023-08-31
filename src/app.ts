@@ -16,7 +16,7 @@ app.listen(port, async () => {
     try {
         registerRoutes(app);
         await connection.checkConnection();
-        console.log(` ⚡️ Server is running at http://${host}:${port}`);
+        console.log(` ⚡️ Account service is running at http://${host}:${port}`);
     } catch (e: any) {
         console.log(` ❌ Error: ${e.message}`);
         throw e;
