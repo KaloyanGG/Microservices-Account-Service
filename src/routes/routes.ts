@@ -8,7 +8,7 @@ export default function registerRoutes(app: Express) {
     });
 
     app.get('/health', (req: Request, res: Response) => {
-        res.send('Account Service is healthy!');
+        res.send('Healthy!');
         console.log(' 👨‍⚕️ Health Checked!');
     });
 
